@@ -1,25 +1,14 @@
 # Ember-html-gl
 
-This README outlines the details of collaborating on this Ember addon.
+Ember component shell for [html-gl](https://github.com/PixelsCommander/HTML-GL)
 
-## Installation
+## Usage
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+Wrap elements you want to animate with the html-gl component. (Alternatively, extend
+it as needed).
 
-## Running
-
-* `ember server`
-* Visit your app at http://localhost:4200.
-
-## Running Tests
-
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+```
+{{html-gl}}
+  ..foo..
+{{/html-gl}}
+```
