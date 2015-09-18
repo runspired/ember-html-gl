@@ -5,15 +5,16 @@
 
 <h2>Demo (using {{if isWebGL 'WebGL' 'DOM'}})</h2>
 <button {{action "toggleWebGL"}}>Toggle {{if isWebGL 'DOM' 'WebGL'}}</button>
+<button {{action "toggleTitle"}}>Change The Default Title ({{defaultTitle}})</button>
 <hr>
 
 <div class="content_wrapper">
     <section class="broadcasts_list">
         <h1>SLIDER BELOW IS RENDERED IN WEBGL, DRAG IT</h1>
       {{#if isWebGL}}
-        {{animated-htmlgl class="horizontal_carusel"}}
+        {{animated-htmlgl class="horizontal_carusel" defaultTitle=defaultTitle}}
       {{else}}
-        {{animated-item class="horizontal_carusel"}}
+        {{animated-item class="horizontal_carusel" defaultTitle=defaultTitle}}
       {{/if}}
     </section>
 </div>

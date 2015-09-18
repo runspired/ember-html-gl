@@ -21,6 +21,8 @@ export default Component.extend({
   startX: 0,
   startLeft: 0,
 
+  defaultTitle: 'Quantum of solace',
+
   _start(event) {
     this.set('isDragging', true);
     this.set('startX', (event.pageX || event.x) || event.touches[0].pageX);
@@ -82,6 +84,10 @@ export default Component.extend({
         return false;
       }
     });
+
+  },
+
+  actions: {
 
   }
 
