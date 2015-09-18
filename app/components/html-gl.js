@@ -1,0 +1,1 @@
+export { default } from 'ember-html-gl/components/html-gl';
