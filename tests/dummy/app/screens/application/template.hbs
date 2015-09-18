@@ -1,0 +1,21 @@
+<h1>Ember Html-GL</h1>
+<p>
+    Web-GL based rendering for Ember by wrapping html-gl.
+</p>
+
+<h2>Demo (using {{if isWebGL 'WebGL' 'DOM'}})</h2>
+<button {{action "toggleWebGL"}}>Toggle {{if isWebGL 'DOM' 'WebGL'}}</button>
+<hr>
+
+<div class="content_wrapper">
+    <section class="broadcasts_list">
+        <h1>SLIDER BELOW IS RENDERED IN WEBGL, DRAG IT</h1>
+      {{#if isWebGL}}
+        {{animated-htmlgl class="horizontal_carusel"}}
+      {{else}}
+        {{animated-item class="horizontal_carusel"}}
+      {{/if}}
+    </section>
+</div>
+
+{{outlet}}

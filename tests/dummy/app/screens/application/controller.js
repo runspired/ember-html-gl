@@ -1,0 +1,17 @@
+import Ember from 'ember';
+
+const {
+  Controller
+  } = Ember;
+
+export default Controller.extend({
+
+  isWebGL: false,
+
+  actions: {
+    toggleWebGL() {
+      this.toggleProperty('isWebGL');
+    }
+  }
+
+});
