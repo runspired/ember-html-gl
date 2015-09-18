@@ -75,8 +75,6 @@ export default Component.extend({
   },
 
   didInsertElement() {
-    this._super();
-
     //Slider logic, written in HTML / JS.
     //The only difference between HTML GL and basic HTML is that you should use element.styleGL.transform instead of element.style.transform
     this.$().find('img').each(function() {
@@ -85,6 +83,7 @@ export default Component.extend({
       }
     });
 
+    this._super();
   },
 
   actions: {
